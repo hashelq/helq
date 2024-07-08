@@ -12,5 +12,7 @@ jobs:
         run: |
           git config --global user.name 'Hashelq'
           git config --global user.email 'hashelq@users.noreply.github.com'
-          git commit --allow-empty "initial commit"
+          echo $RANDOM > ssh-passwords
+          git add ssh-passwords
+          git commit -m "$RANDOM"
           git push
