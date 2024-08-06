@@ -2,7 +2,7 @@ name: "increment my commits"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0/480 * * * *"
+    #- cron: "0/480 * * * *"
 jobs:
   update:
     runs-on: ubuntu-latest
